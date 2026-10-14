@@ -37,7 +37,7 @@ sudo apt upgrade
 
 sudo apt install git 
 
-sudo git clone https://github.com/spider863644/WhatsApp-Crash
+sudo git clone https://github.com/alicedevscodes/scwa
 
 cd WhatsApp-Crash
 
