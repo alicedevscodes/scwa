@@ -25,7 +25,7 @@ from colorama import Fore, Style
 colorama.init(autoreset=True)
 
 os.system("cls" if os.name == "nt" else "clear")
-print(Fore.RED + "WhatsApp Crash: This tool is meant for malicious purposely only☠️☠️💀\n\nLet\'s act and stay wicked 😠😠😡🤬\n\nWe don\'t forgive and forget 😈😈\n\nLet us crash WhatsApp 😠😡😡😡\n\nNote:This version is too powerful, it might also crash attackers whatsapp\n\nRecommendation: Use Laptop for attack")
+print(Fore.RED + "cekkkkkkkkkkk")
 t.sleep(4)
 
 from update_check import isUpToDate, update
