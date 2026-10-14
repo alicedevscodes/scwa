@@ -1,25 +1,30 @@
 import os
 import time as t
 import urllib.parse
-try:
-    import urllib.request
-except:
-    os.system("pip install --upgrade pip")
-    os.system("pip install urllib2")
+import urllib.request
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
 try:
     import update_check
-except:
-    os.system("pip install --upgrade pip")
-    os.system("pip install update-check")
+except ImportError:
+    install("update-check")
+    import update_check
+
 try:
     import colorama
-except:
-    os.system("pip install --upgrade pip")
-    os.system ("pip install colorama")
-from colorama import *
+except ImportError:
+    install("colorama")
+    import colorama
+
+from colorama import Fore, Style
+
 colorama.init(autoreset=True)
-os.system("clear")
+
+os.system("cls" if os.name == "nt" else "clear")
 print(Fore.RED + "WhatsApp Crash: This tool is meant for malicious purposely only☠️☠️💀\n\nLet\'s act and stay wicked 😠😠😡🤬\n\nWe don\'t forgive and forget 😈😈\n\nLet us crash WhatsApp 😠😡😡😡\n\nNote:This version is too powerful, it might also crash attackers whatsapp\n\nRecommendation: Use Laptop for attack")
 t.sleep(4)
 
